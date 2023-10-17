@@ -1,0 +1,436 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins';
+}
+
+a {
+	text-decoration: none;
+}
+
+.primeraSeccionContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:
+		'navigacion           navigacion'
+		'primeraPresentacion  seccionFoto';
+    background-color: rgb(28, 28, 27);
+}
+
+.navigacionArriba {
+    grid-area: navigacion;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.parteIzquierda {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+.parteIzquierda b {
+    margin-left: 5px;
+    color: rgb(195, 192, 192);
+}
+
+.contenedorLoguitoIzquierda {
+    width: 40px;
+    display: flex;
+}
+
+.contenedorLoguitoIzquierda img {
+    width: 100%;
+}
+
+
+.parteDerecha b {
+    margin-right: 20px;
+    color: rgb(164, 162, 162);
+}
+
+.parteDerecha b:last-child {
+    margin-right: 0px;
+}
+
+.parteDerecha b:hover {
+    text-decoration: underline; 
+    color: rgb(122, 122, 122); 
+    cursor: pointer;
+}
+
+.contactMe {
+    padding: 2px 3px;
+    background-color: #47D16E;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contactMe:hover {
+    text-decoration: none !important;
+    background-color: rgb(122, 122, 122);
+    cursor: pointer;
+    color: black !important;
+}
+
+.elementoAparecer {
+  display: none;
+  font-size: 12px;
+  font-weight: 100;
+  text-align: left;
+}
+
+.elementoAparecer p{
+  font-weight: 800;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+
+.elementoAparecer a{
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.primeraPresentacion {
+    grid-area: primeraPresentacion;
+    margin-top: 200px;
+    padding: 0px 10px 0px 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.primeraPresentacion h1 {
+  color: #47D16E;
+}
+
+.primeraPresentacion p {
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+.seccionFoto {
+    grid-area: seccionFoto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contornoFoto {
+    border: 3px solid rgb(107, 106, 106);
+    width: 300px;
+    height: 535px;
+}
+
+.contenedorPrimeraFoto {
+    margin-left: -15px;
+    margin-top: -15px;
+    z-index: 100;
+    width: 300px;
+    display: flex;
+    margin-right: 20px;
+}
+
+
+.contenedorPrimeraFoto img {
+    width: 100%;
+}
+
+
+.redesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    max-width: 30px;
+}
+
+.redesSociales a i {
+    color: #6c6c6c;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.segundoIcono, .terceroIcono{
+    margin-top: 20px;
+}
+
+.redesSociales i:hover {
+    color: rgb(142, 135, 135);
+    cursor: pointer;
+    font-size: 35px;
+}
+
+
+/* segunda seccion */
+.segundaSeccionContainer {
+    display: flex;
+    padding: 10px 50px 70px 50px;
+    background-color: rgb(36, 36, 35);
+}
+
+.segundaPresentacion {
+    grid-area: segundaPresentacion;
+    margin-top: 100px;
+    padding: 0px 60px 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.segundaPresentacion h1 {
+  color: #47D16E;
+}
+
+.segundaPresentacion p {
+    margin-top: 15px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+
+.segundaSeccionFoto {
+    grid-area: seccionFoto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.segundoContornoFoto {
+  border: 3px solid rgb(107, 106, 106);
+    width: 300px;
+    height: 450px;
+}
+
+.segundoContenedorFoto {
+    margin-left: 15px;
+    margin-top: 15px;
+    z-index: 100;
+    width: 300px;
+    display: flex;
+    margin-right: 20px;
+}
+
+
+.segundoContenedorFoto img {
+    width: 100%;
+    border: none;
+}
+
+
+.terceraSeccionPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(28, 28, 27);
+    padding-top: 70px;
+}
+
+.tituloPortfolio {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+
+.contenedorNivel {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 5px;
+    width: 90%;
+}
+
+
+.contenedorVideo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedorVideo .titulo {
+    color: #47D16E;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+
+.contenedorVideo .video {
+    grid-area: video;
+    justify-self: center;
+    border-radius: 40px;
+}
+
+video {
+  border-radius: 40px;
+}
+
+.contenedorVideo .video:hover {
+    cursor: pointer;
+}
+
+.contenedorVideo .fecha {
+  text-align: right;
+  color: #6c6c6c;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* Add this CSS inside your existing CSS file */
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .primeraSeccionContainer {
+      grid-template-columns: 100%;
+      grid-template-areas:
+        'navigacion'
+        'primeraPresentacion'
+        'seccionFoto';
+    }
+  
+    .navigacionArriba {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    .parteIzquierda {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .parteIzquierda b {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  
+    .parteDerecha {
+      margin-top: 20px;
+    }
+
+  
+    .primeraPresentacion {
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+
+    .primeraPresentacion h1{
+        text-align: center;
+    }
+
+    .primeraPresentacion p{
+        text-align: justify;
+    }
+
+    .seccionFoto {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+  
+    .contornoFoto {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 50px;
+    }
+  
+    .redesSociales {
+      flex-direction: row;
+      position: absolute;
+      top: 540px;
+      bottom: 0;
+      left: 80px;
+      right: 0;
+      text-align: center;
+    }
+  
+    .redesSociales i {
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
+    .segundaSeccionContainer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+      }
+    
+      .segundaSeccionFoto {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    
+      .segundaPresentacion {
+        margin-top: 20px;
+        padding: 0 20px;
+      }
+    
+      .segundaPresentacion p {
+        margin-top: 15px;
+        text-align: justify;
+      }
+    /* Additional mobile styles can be added here */
+  }
+  
+
+
+  /* Ajustar Ultima Parte texto arriba de imagen */
+  @media (max-width: 1000px) {
+  .terceraSeccionPortfolio {
+    padding-top: 40px; /* Adjust padding for spacing */
+  }
+
+  .tituloPortfolio {
+    font-size: 24px; /* Adjust font size for readability */
+    margin-bottom: 10px; /* Adjust margin for spacing */
+  }
+
+  .contenedorNivel {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contenedorVideo {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+  }
+
+  .contenedorVideo .titulo {
+    font-size: 20px; /* Adjust font size for readability */
+  }
+
+  .contenedorVideo .titulo2 {
+    margin-top: 80px;
+  }
+
+  .contenedorVideo .descripcion {
+    font-size: 14px; /* Adjust font size for readability */
+  }
+
+  .contenedorVideo .video {
+    max-width: 100%; /* Make videos responsive */
+    align-self: center;
+  }
+}
